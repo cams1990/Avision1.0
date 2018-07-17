@@ -1,0 +1,231 @@
+<app-entete-menu></app-entete-menu>
+<div class="container row offset-2 mainMenu" style="margin-top:-20px;">
+    
+  <ul class="nav nav-tabs mainMenu">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#perf_sante" >
+        <i class="fa fa-rocket" style="font-size:14px;" ></i>
+        <b> Performance Santé</b>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#agenda">
+        <i class="fa fa-calendar" style="font-size:14px;"></i>
+        <b> Agenda</b>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#traitement">
+        <i class="fa fa-tasks" style="font-size:14px;"></i>
+        <b> Traitement</b>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+<div style="margin-top: 0px;">
+  <div class=" row offset-6">
+    <div class="col">
+      <i class="fa fa-cogs" style="color:rgb(42, 180, 42); font-size:17px;"> Ajouter</i>
+      <div class="d-flex flex-row">
+        <div class="p-1" style="margin-top: -10px;">
+          <a class="link" routerLink="/formSaisiInfo"> Données |</a>
+        </div>
+        <div class="p-1" style="margin-top: -10px;">
+          <a class="link" routerLink="/"> Importer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <i class="fa fa-file" style="color: rgba(224, 143, 21, 0.877); font-size:14px;"> Exporter</i>
+      <div class="d-flex flex-row">
+        <div class="p-1" style="margin-top: -10px;">
+          <a class="link" routerLink="/"> Graphes |</a>
+        </div>
+        <div class="p-1" style="margin-top: -10px;">
+          <a class="link" routerLink="/">Docs publics</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <i class="fa fa-folder-open-o" style="color: mediumorchid; font-size:17px;"> Archiver</i>
+      <div class="d-flex flex-row">
+        <div class="p-1" style="margin-top: -10px;">
+          <a class="link" routerLink="/">Mes Lots</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+
+      <app-menu-lateral></app-menu-lateral>
+  </div>
+  <div class="col-md-10">
+<div class=" row offset-3" style="margin-top:0px">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#informations" style="color:rgb(42, 180, 42);">
+        <b>
+          <i class="fa fa-info-circle" style="color:rgb(42, 180, 42); font-size:20px;"></i> Informations</b>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#graphique" style="color:rgba(224, 143, 21, 0.877);">
+        <b>
+          <i class="fa fa-line-chart" style="color:rgba(224, 143, 21, 0.877); font-size:20px;"></i> Graphiques</b>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#donnesquot" style="color:#3d82c7;">
+        <b>
+          <i class="fa fa-window-maximize" style="color:#3d82c7; font-size:20px;"></i> Données quotidiennes</b>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#donneesHebdo" style="color:rgba(165, 86, 148, 0.733)">
+        <b>
+          <i class="fa fa-window-restore" style="font-size:20px;"></i> Données Hebdomadaire</b>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="tab-pane fade show active" id="informations" style="margin-top:px;margin-bottom:5px;">
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="card panneaux">
+        <div class="card-header bg-primary text-center" style="color: #ffffff;">
+          <b>Informations de cumules</b>
+        </div>
+
+        <div class="card-body row col-md-12 text-right">
+          <div class="col-md-4 text-right">
+            <div>
+              <label class="text-right" for="age">Ages de animaux</label>
+            </div>
+
+            <div>
+              <label for="ndAnimaux_Lot">Nombre d'animaux au depart du lot</label>
+            </div>
+
+            <div>
+              <label for="ndAnimaux_Pres">Nombre d'animaux présent</label>
+            </div>
+
+            <div>
+              <label for="mortalite">La mortalité</label>
+            </div>
+
+            <div>
+              <label for="taux_mortalite">Le taux de mortalité</label>
+            </div>
+
+            <div>
+              <label for="temps_lot">Temps passé sur lot</label>
+            </div>
+
+            <div>
+              <label for="mortalite">La mortalité</label>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 text-right">
+            <div>
+              <label for="cumul_aliment">Cumule de consommation d'aliments</label>
+            </div>
+
+            <div>
+              <label for="cumule_poule">Cumule d'aliment par poule</label>
+            </div>
+
+            <div>
+              <label for="cumil_eau">Cumule de consommation d'eau</label>
+            </div>
+
+            <div>
+              <label for="mortalite">La mortalité</label>
+            </div>
+
+            <div>
+              <label for="taux_mortalite">Le taux de mortalité</label>
+            </div>
+            <div>
+              <label for="temps_lot">Temps passé sur lot</label>
+            </div>
+
+            <div>
+              <label for="mortalite">La mortalité</label>
+            </div>
+
+          </div>
+          <!-- <div class="row offset-5">
+                            <div class="btn btn-primary col-md-3 btn-sm">
+                                <i class="fa fa-edit"></i> Editer
+    
+                            </div>
+                        </div> -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row panneaux" style="margin-top: -10px;">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header bg-primary text-center" style="color: #ffffff;">
+        <b>Dernière données saisies</b>
+      </div>
+      <div class="card-body row col-md-12 text-right">
+        <div class="col-md-4 text-right">
+          <div>
+            <label for="date">Date</label>
+          </div>
+          <div>
+            <label for="ndAnimaux_Lot">Mortalité</label>
+          </div>
+          <div>
+            <label for="mortalite">Température du batiment</label>
+          </div>
+          
+         
+        </div>
+        <div class="col-md-6 text-right">
+          <div>
+            <label for="qte_ali_indiv">Quantite d'aliment distribuée par individu</label>
+          </div>
+          <div>
+            <label for="type_ali" class="text-right">Type d'aliment</label>
+          </div>
+         
+          <div>
+            <label for="qte_indiv">Quantite distribuée par individu</label>
+          </div>
+         
+          
+        
+        </div>
+        <!-- <div class="row offset-5">
+                                                <div class="btn btn-primary col-md-3 btn-sm">
+                                                    <i class="fa fa-edit"></i> Editer
+                        
+                                                </div>
+                                            </div> -->
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
+<hr>
+

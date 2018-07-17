@@ -1,0 +1,488 @@
+<app-entete-menu></app-entete-menu>
+      
+
+<div class="row">
+<div class="col-md-2 p-1" style="margin-top: 30px;">
+  <app-menu-lateral ></app-menu-lateral>
+</div>
+  <div class="col-md-10">
+
+    <!--Commit ou annulation des données saisies-->
+    
+    <div class="row offset-8">
+     
+      <div class="col mb-2">
+        <button routerLink="/reportingData" class="btn btn-primary">
+          <i class="fa fa-save"> Enregistrer</i>
+        </button>
+      </div>
+      <div class="col mb-2">
+        <button routerLink="/formSaisiInfo" class="btn btn-danger">
+          <i class="fa fa-times"> Annuler</i>
+        </button>
+      </div>
+    </div>
+
+    <!--.........................................................................................................-->
+
+
+    <!--Menu saisi des 3 section d'informations de saisi-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">
+          <b>Alimentation</b>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#profile">
+          <b>Santé</b>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#technique">
+          <b>Technique</b>
+        </a>
+      </li>
+    </ul>
+    <!--.............................................................................................................-->
+
+    <!--Nous sommes dans le menu-->
+    <div id="myTabContent" class="tab-content">
+
+      <!--Saisi d'information sur l'alimentation des animaux-->
+
+      <div class="tab-pane fade show active" id="home">
+        <div class="row container offset-3">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="dateSystem">Date</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Nouvelle date">
+              </div>
+              <div class="form-group">
+                <label for="dateSystem">Quantite d'aliment distribuée</label>
+                <input type="text" class="form-control form-control-sm" placeholder="quantité distribuée">
+              </div>
+              <div class="form-group">
+                <label for="exampleSelect1">Type d'aliment</label>
+                <select class="form-control form-control-sm" id="type_ali">
+                  <option>type1</option>
+                  <option>type2</option>
+                  <option>type3</option>
+                  <option>type4</option>
+                  <option>type5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preponderance_silo_ali">Prépondérance Silo aliment</label>
+                <select class="form-control form-control-sm" id="type_ali">
+                  <option>preponderance_silo_ali1</option>
+                  <option>préponderance_silo_ali2</option>
+                  <option>prépondérance_silo_ali3</option>
+                  <option>préponderance_silo_ali4</option>
+                  <option>préponderance_silo_ali5</option>
+                </select>
+              </div>
+
+            </form>
+
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="dateSystem">Quantite d'eau distribuée</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="quantité distribuée">
+                </div>
+                <div class="form-group">
+                  <label for="preponderance_silo_ali">Prépondérance Silo eau</label>
+                  <select class="form-control form-control-sm"  id="type_ali">
+                    <option>preponderance_silo_eau1</option>
+                    <option>préponderance_silo_eau2</option>
+                    <option>prépondérance_silo_eau3</option>
+                    <option>préponderance_silo_eau4</option>
+                    <option>préponderance_silo_eau5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--.............................................................................................................-->
+
+
+      <!--Saisi des informations sur la santé des animaux-->
+
+
+      <div class="tab-pane fade" id="profile">
+        <div class="d-flex justify-content-center">
+          <div class="col-md-6  spacer3">
+            <div class="card" >
+              <div class="card-header bg-primary text-center" style="color: #ffffff;">
+                <span>Informations</span>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="typemaladie">Maladie</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="type de maladie">
+                </div>
+               
+                <div class="form-group">
+                  <label for="tri">Tri</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="tri">
+                </div>
+                <div class="form-group">
+                  <label for="nuisible">Nuisible</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="Nuisible">
+                </div>
+                <div class="form-group">
+                  <label for="poid_moyen">Poids moyen des animaux</label>
+                  <input type="text" class="form-control form-control-sm" placeholder="poids moyen">
+                </div>    
+                
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!--.............................................................................................................-->
+
+      <!--Saisi des informations techniques -->
+
+      <div class="tab-pane fade" id="technique">
+        <div class="d-flex justify-content-center" style="margin-bottom: 100px;" >
+         
+
+            <form>
+          <div class="row mb-2" style="margin-bottom: 100px;">
+              <div class="form-group">
+                <label for="mini">Min</label>
+                <input type="text" class="form-control form-control-sm" placeholder="min">
+              </div>
+              <div class="form-group" style="margin-left: 80px;">
+                <label for="mini">Max</label>
+                <input type="text" class="form-control form-control-sm" placeholder="min">
+              </div>
+            </div>
+              <div class="form-group">
+                <label for="mini">Temperature</label>
+                <input type="text" class="form-control form-control-sm" placeholder="temperature">
+              </div>
+              <div class="form-group">
+                <label for="mini">Temps passé/Lot</label>
+                <input type="text" class="form-control form-control-sm" placeholder="temps_passe">
+              </div>
+            </form>
+
+        
+          
+        </div>
+      </div>
+      <hr>
+  
+      <!--.............................................................................................................-->
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container">
+      <a href="../" class="navbar-brand">APPLI Avision</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Ajouter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">Exporter</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Archiver</a>
+            </li>
+        </ul>
+      </div>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-primary my-2 my-sm-0" type="submit">Chercher</button>
+        </form>
+    </div>
+    <div class="page-header" id="banner"></div>
+  </div> -->
+<!-- <nav>
+    <ul>
+        <li class="col align-self-center"> <i class="fa fa-bell-o"></i>  Rappels </li> 
+        <li>
+  <a aria-expanded="false" href="#pageSubmenu1" data-toggle="collapse" class="col align-self-end dropdown-toggle"><i class="fa fa-user-o"></i> AL Hassane CAMARA</a>
+      <ul id="pageSubmenu1">
+        <li>
+            <a href="#">Déconnexion</a>
+        </li>
+        <li>
+            <a href="#">Item1</a>
+        </li>
+        <li>
+            <a href="#">item2</a>
+        </li>
+        </ul>
+      </li>
+      </ul>
+  </nav> -->
+
+
+
+
+<!-- <div class="row">
+    <div class="col-md-8"></div>
+<div class="col-md-4 "> 
+  <div class="row">
+    <div class="col-md-2">
+    <p>
+        <i class="fa fa-bell-o"></i> Rappels
+    </p>
+  </div>
+    <div class="col-md-4">
+      <p style="margin-left: 40px;" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <i class="fa fa-user-o"></i> Al Hassane CAMARA
+      </p>
+   
+      <div class="dropdown-menu">
+        <a class="dropdown-item"> <i class="fa fa-logout"></i> Deconnexion</a>
+        <a class="dropdown-item">Mes Batiment</a>
+        <a class="dropdown-item">Mes Silos</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+<hr>
+   -->
+<!-- 
+<div class="container">
+    <div class="row justify-content-end ">
+    <div class="col-md-2">
+        <p>
+            <i class="fa fa-bell-o"></i> Rappels
+        </p>
+      </div>
+      <div class="col-md-2">
+          <p style="margin-left: 40px;" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user-o"></i> Al Hassane CAMARA
+             </p>
+          
+             <div class="dropdown-menu">
+               <a class="dropdown-item"> <span class="fa fa-log-out"></span> Deconnexion</a>
+               <a class="dropdown-item">Mes Batiment</a>
+               <a class="dropdown-item">Mes Silos</a>
+            </div>
+  </div>
+</div>
+</div>
+  <br> -->
+
+
+
+
+  <!-- <div class="col-md-6">
+
+            <form>
+
+              <div class="form-group">
+                <label for="mini">Lumiere de</label>
+                <input type="text" class="form-control" placeholder="lumiere">
+              </div>
+              <div class="form-group">
+                <label for="mini">à</label>
+                <input type="text" class="form-control" placeholder="min">
+              </div>
+              <div class="form-group">
+                <label for="mini">Lumiere de</label>
+                <input type="text" class="form-control" placeholder="lumiere">
+              </div>
+              <div class="form-group">
+                <label for="mini">à</label>
+                <input type="text" class="form-control" placeholder="min">
+              </div>
+              <div class="form-group">
+                <label for="mini">Lumiere de</label>
+                <input type="text" class="form-control" placeholder="lumiere">
+              </div>
+              <div class="form-group">
+                <label for="mini">à</label>
+                <input type="text" class="form-control" placeholder="min">
+              </div>
+            </form>
+
+          </div> -->
+        
+
+
+
+          <!-- <div class="form-group">
+              <label for="autre">Enlevement</label>
+              <input type="text" class="form-control" placeholder="enlevement">
+            </div> -->
+            <!-- <div class="form-group">
+              <label for="poid_moyen">Poids moyen des animaux</label>
+              <input type="text" class="form-control" placeholder="poids moyen">
+            </div> -->
+
+            <!-- <div class="form-group">
+              <label for="uniformite">Uniformité du poids</label>
+              <input type="text" class="form-control" placeholder="Uniformité poids">
+            </div> -->
+            <!-- <div class="form-group">
+              <label for="noter">Noter</label>
+              <input type="textArrea" class="form-control" placeholder="Noter des infos">
+            </div>
+            <div class="form-group">
+              <label for="uniformite">Traitement éventuel</label>
+              <input type="textArrea" class="form-control" placeholder="Décrir le traitement éventuel">
+            </div> -->
+
+
+            <!-- <div class="form-group">
+                  <label for="autre">Autre</label>
+                  <input type="text" class="form-control" placeholder="Autre">
+                </div> -->
+
+
+
+                 <!-- <div class="form-group">
+                  <label for="materiel">Materiel</label>
+                  <input type="text" class="form-control" placeholder="materiel">
+                </div> -->
+
+
+                <!-- <div class="text1">
+              <span class="text2">Tour de chaine</span>
+            </div>
+            <div class="row">
+              <div class="form-group mx-sm-2 mb-2">
+                <input type="text" class="form-control" id="inputPassword2" placeholder="Tour de chiane1">
+              </div>
+              <div class="form-group mx-sm-2 mb-2">
+
+                <input type="text" class="form-control" id="inputPassword2" placeholder="Tour de chiane2">
+              </div>
+              <div class="form-group mx-sm-2 mb-2">
+
+                <input type="text" class="form-control" id="inputPassword2" placeholder="Tour de chiane3">
+              </div>
+            </div> -->
+            <!-- <div class="btn-group">
+              <button type="button" class="btn btn-primary">Toutes chaines supplementaires</button>
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Autre Chaine1</a>
+                </li>
+                <li>
+                  <a href="#">Autre chaine2</a>
+                </li>
+                <li>
+                  <a href="#">Autre chaine2</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
+            </div> -->
+
+
+             <!-- <div class="col mb-2">
+        <button routerLink="/AfficheSaisi" class="btn btn-primary">
+          <i class="fa fa-save"> Enregistrez/Quitter</i>
+        </button>
+      </div> -->
